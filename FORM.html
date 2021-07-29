@@ -1,0 +1,64 @@
+<HTML>
+    <HEAD>
+        <TITLE>Registration form</TITLE>
+        <style>  form{
+            color:rgb(247, 11, 11);text-align: justify;font-weight: bold;
+        }
+        hr{
+            border-style: solid; border-width: medium;color: rgb(9, 155, 223);
+        }
+        </style>
+      
+    </HEAD>
+    <BODY style="background-image: url(corona-test.jpeg);background-size: cover;background-repeat: repeat;">
+    <H1 style="color: blueviolet;">Feel free to fill</H1>
+    <hr>
+    <form method="GET" action="hospital.php">
+        <label>Name of patient</label><input type="text" name="C-NAME">
+        <br><br>
+        <label>Date of registeration</label><input type="datetime-local" name="DOR">
+        <br><br>
+        <label>Age</label><input type="number" name="Age">
+        <br><br>
+        <label>Sex</label><input type="radio" value="male" name="sex"><label>Male</label>
+        <input type="radio" value="female" name="sex"><label>Female</label>
+        <br><br>
+        <label>Contact no.:</label><input type="tel" name="no.">
+        <br><br>
+        <label>Nationality</label>
+        <select name="nation">
+            <option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="other" >Other</option>
+        </select>
+        <br><br>
+        <label>Province</label>
+        <select name="Province">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="foreign">Foreign</option>
+        </select>
+        <br><br>
+        <label>City/town/village</label><input type="text" name="place">
+        <br><br>
+        <label>Covid 19 Test</label><input type="radio" value="yes" name="Test"><label>Yes</label>
+        <input type="radio" value="no" name="Test"><label>No</label>
+        <br><br>
+        <label>Do you have a history of the following problem?</label>
+        <br>
+        <input type="checkbox" value="Fever" name="Problem"> <label>Fever</label>
+        <input type="checkbox" value="Breating Problem" name="Problem"> <label>Breating Problem</label>
+        <input type="checkbox" value="Loss of taste or smell" name="Problem"> <label>Loss of taste or smell</label>
+        <input type="checkbox" value="Chest pain or pressure" name="Problem"> <label>Chest pain or smell</label>
+        <input type="checkbox" value="Cough" name="Problem"><label>Cough  </label>
+        <label> Others</label><input type="text" name="Problem">
+        <BR><BR>
+        <input type="submit" value="Register">
+    </form>
+</BODY>
+</HTML>
